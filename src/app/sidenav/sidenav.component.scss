@@ -1,0 +1,26 @@
+a {
+    text-decoration: none;
+    color: whitesmoke;
+
+    padding: 1rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+  
+  }
+  
+a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+a:active {
+    background-color: black;
+  }
+
+mat-icon {
+  padding-right: 10px;
+}
