@@ -1,0 +1,28 @@
+.image-gallery {
+    padding-inline-start: 0em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+    > li {
+        list-style: none;
+      
+        img {    
+            min-width: 100px;
+            max-width: 300px;
+            vertical-align: middle;
+            border-radius: 30px;
+          }
+
+        .overlay {
+            position: relative;
+            top: -40px;
+            left: 20px;
+            color: rgba(250, 235, 215, 0.644);
+        }
+    }
+
+      
+  }

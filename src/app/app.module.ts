@@ -15,6 +15,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { GalleryComponent } from './gallery/gallery.component';
 
 
 const material = [MatToolbarModule,
@@ -29,7 +30,8 @@ const material = [MatToolbarModule,
     HeaderComponent,
     SidenavComponent,
     HomepageComponent,
-    InfosComponent
+    InfosComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
