@@ -2,27 +2,37 @@
     padding-inline-start: 0em;
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 3vw;
     flex-direction: row;
     justify-content: space-evenly;
 
-    > li {
-        list-style: none;
-      
-        img {    
-            min-width: 100px;
-            max-width: 300px;
-            vertical-align: middle;
-            border-radius: 30px;
-          }
-
-        .overlay {
-            position: relative;
-            top: -40px;
-            left: 20px;
-            color: rgba(250, 235, 215, 0.644);
+  > li {
+      list-style: none;
+      transform: translateY(0%);
+      transition: transform 1s;
+    
+      img {    
+          width: 35vw;
+          min-width: 100px;
+          max-width: 300px;
+          vertical-align: middle;
+          border-radius: 30px;
         }
-    }
 
+      .overlay {
+          position: relative;
+          top: -40px;
+          left: 20px;
+          color: rgba(250, 235, 215, 0.644);
+      }
+
+      &:hover {
+      transform: translateY(-5%);
+      transition: transform 0.5s;
       
+        .overlay {
+          color: aliceblue;
+        }
+      }
   }
+}

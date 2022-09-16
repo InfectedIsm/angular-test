@@ -8,10 +8,13 @@ h1 {
 
 mat-icon {
     color: antiquewhite;   
+    @media screen and (min-width: 1024px) {
+        display:none;
+    }
 }
 
 mat-toolbar{
-    background-color: rgba(0, 0, 0, 0.185);
+    background-color: rgba(77, 77, 77, 0.185);
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -21,4 +24,68 @@ mat-toolbar{
     padding-bottom: 2rem;
     margin-right: 50px;
 }
+
+mat-toolbar-row {
+    background-color: rgba(77, 77, 77, 0.185);
+    width: 100%;
+    padding: 0px 10px 0px 10px;
+
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: space-around;
+    flex-grow: 1;
+
+    @media screen and (max-width: 1024px) {
+        display: none;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 90%;
+    margin-left: 10px;
+
+    transition: 1s;
+    background-color: transparent;
+    
+    border-right: 1px solid rgba(89, 86, 134, 0.336);
+    border-left: 1px solid rgba(89, 86, 134, 0.336);
+    border-radius: 20px;
+
+    &:hover {
+        transition: 1s;
+        color: white;
+        background-color: rgba(35, 38, 68, 0.589);
+
+        
+        }
+    &:active {
+        transition: 0.2s;
+        background-color: black;
+    }
+}
+
+span.separator {
+    border-right: 1px solid rgba(89, 86, 134, 0.336);
+    width: 10px;
+    border-radius: 10px;
+    height: 90%;
+    box-shadow: 10px red;
+}
+    
+
+    
+
+
+
+
 
