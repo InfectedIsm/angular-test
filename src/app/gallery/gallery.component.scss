@@ -1,4 +1,6 @@
 .image-gallery {
+
+    margin-top: 3vh;
     padding-inline-start: 0em;
     display: flex;
     flex-wrap: wrap;
@@ -23,7 +25,9 @@
           position: relative;
           top: -40px;
           left: 20px;
-          color: rgba(250, 235, 215, 0.644);
+          color: rgba(250, 235, 215, 0.774);
+          font-weight: 900;
+          -webkit-text-stroke: 0.5px rgba(49, 49, 49, 0.644);
       }
 
       &:hover {
